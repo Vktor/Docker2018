@@ -1,0 +1,10 @@
+FROM postgres:9.6.8
+
+ENV POSTGRES_USER=tpidb
+ENV POSTGRES_PASSWORD=1234
+ENV POSTGRES_DB=tpidb
+
+EXPOSE 5430
+
+CMD ["postgres"]
+
