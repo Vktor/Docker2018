@@ -12,7 +12,7 @@ RUN asadmin start-domain && asadmin create-jdbc-connection-pool --user admin --p
 asadmin create-jdbc-resource --user admin --passwordfile /opt/pwdfile \
 --connectionpoolid matenimientoTpi2018 --enabled=true mantenimientoJdni2018
 
-ADD TramitesAcademicaMavenApp-ear-1.0-SNAPSHOT.ear /opt/payara41/glassfish/domains/domain1/autodeploy 
+#ADD TramitesAcademicaMavenApp-ear-1.0-SNAPSHOT.ear /opt/payara41/glassfish/domains/domain1/autodeploy 
 #COPY  /opt/payara41/glassfish/domains/domain1/autodeploy 
 
 EXPOSE 4848 8080

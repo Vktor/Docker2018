@@ -1,9 +1,6 @@
 Compilar la imagen 
         docker build  -t mariadbtpi:IR13002 .
 
-Correr contenedor
-        docker run  -it --name mdbtpi -p 3306:3306 -v /home/yisusdebian/Documentos/TPI/DockerVolumes/mariadbVolumen:/etc/mysql/conf.d -d mariadbtpi:IR13002
-
 Ver errores del contenedor
         docker logs -f cointername
 
@@ -19,4 +16,4 @@ contenedor DATOS
 
 contenedor en EJECUCION
 	
-	docker run --rm -it --name mdbtpi -p 3306:3306 -d --volumes-from data-mariadb mariadbtpi:IR13002
+	docker run --rm -it --name mdbtpi -p 3300:3306 -d --volumes-from data-mariadb mariadbtpi:IR13002
